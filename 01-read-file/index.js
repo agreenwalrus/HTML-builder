@@ -6,9 +6,9 @@ const reader = fs.createReadStream(filePath);
 
 
 reader.on('data', (chunk) => {
-    console.log('' + chunk);
+  console.log('' + chunk);
 });
 
 reader.on('error', (err) => {
-    console.log(err.stack);
-})
+  console.log(err.stack);
+});
