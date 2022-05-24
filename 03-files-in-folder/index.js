@@ -13,9 +13,7 @@ function checkFiles(folder) {
           let ext = path.extname(file.name);
           console.log(path.basename(file.name, ext) + ' - ' + (ext ? ext : 'N/A') + ' - ' + (stats.size / 1024).toFixed(3) + 'kB');
         });
-      } else {
-        checkFiles(path.join(folder, file.name));
-      }
+      } 
     });
   }
   );
